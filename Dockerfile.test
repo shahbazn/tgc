@@ -7,10 +7,8 @@ MAINTAINER Shahbaz Nazir "shahbaznazir1992@gmail.com"
 COPY tgc/ /tgc/
 COPY setup.py /
 COPY requirements.txt /
+COPY run_tests.sh /
 RUN pip install -r /requirements.txt
 RUN python setup.py install
-ADD run_tests.sh /
 
-RUN chmod +x run_tests.sh
-
-CMD ["bash /run_tests.sh"]
+CMD ["/run_tests.sh"]

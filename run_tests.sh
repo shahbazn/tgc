@@ -11,6 +11,9 @@ then
     echo "Tests failed!"
     exit 1
   fi
-elif [[ "$TEST_TYPE" = "unit" ]]
+fi
+
+if [[ "$TEST_TYPE" = "unit" ]]
+then
   python -m unittest tgc
 fi

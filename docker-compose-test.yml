@@ -1,15 +1,15 @@
 app:
   restart: always
-  image: 10.100.198.200:5000/tgs-ms
+  image: 10.100.198.200:5000/tgc-ms
   environment:
     - SERVICE_NAME=tgc-ms
 
 integ:
-  image: 10.100.198.200:5000/tgs-ms-test
+  image: 10.100.198.200:5000/tgc-ms-tests
   environment: 
     TEST_TYPE: integ 
 
 unit:
-  image: 10.100.198.200:5000/tgs-ms-test
+  image: 10.100.198.200:5000/tgc-ms-tests
   environment: 
     TEST_TYPE: unit
