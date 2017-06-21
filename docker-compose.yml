@@ -1,8 +1,8 @@
 base:
   restart: always
-  image: shahbazn/shahbazn-tgc
+  image: 10.100.198.200:5000/tgc-ms
   environment:
-    - SERVICE_NAME=tgc
+    - SERVICE_NAME=tgc-ms
 
 tgc:
   extends:
