@@ -1,11 +1,12 @@
-import tgc
 import unittest
+
+from app import app as tgc
 
 class APITestCase(unittest.TestCase):
 
     def setUp(self):
-        tgc.app.config['TESTING'] = True
-        self.app = tgc.app.test_client()
+        tgc.config['TESTING'] = True
+        self.app = tgc.test_client()
 
     def tearDown(self):
         pass
