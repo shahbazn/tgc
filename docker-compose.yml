@@ -4,6 +4,6 @@ base:
   environment:
     - SERVICE_NAME=tgc-ms
 
-tgc:
+tgc-ms:
   extends:
     service: base
